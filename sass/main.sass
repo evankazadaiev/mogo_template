@@ -1,0 +1,547 @@
+@import "vars"
+body
+    font-family: "Roboto", sans-serif
+    font-weight: normal
+    overflow-x: hidden
+    line-height: 1
+    
+.top_nav
+    height: 70px
+    line-height: 70px
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    z-index: 2
+    @media only screen and (max-width : 480px)
+        padding: 0 20px
+        background-color: $mainColor
+    &__menu
+        list-style-type: none
+        padding: 0
+        @media only screen and (max-width : 480px)
+            line-height: 1.5
+            text-align: center
+            background-color: $mainColor
+        &_element
+            display: inline-block
+            margin-left: 50px
+            @media only screen and (max-width : 480px)
+                display: block
+                margin-left:  0
+                padding: 20px 0
+        &_link
+            font-size: 14px
+            font-family: $titleFont
+            text-transform: uppercase
+            color: #fff
+            @media only screen and (max-width : 480px)
+                color: #000
+.menu_btn
+	float: right
+	background-color: transparent
+	height: 40px
+	width: 40px
+	border: 1px solid #fff
+	margin-top: 15px
+	outline: none
+	padding: 0
+	display: none
+	@media only screen and (max-width : 768px)
+		display: block
+	div
+		height: 1px
+		width: 70%
+		background-color: #fff
+		&:first-child,
+		&:last-child
+			margin: 0 auto
+		&:nth-child(2)
+			margin: 7px auto
+
+.my_btn
+	height: 40px
+	width: 160px
+	line-height: 38px
+	text-align: center
+	border: 2px solid #fff
+	font-weight: 700
+	font-family: $titleFont
+	font-size: 14px
+	display: inline-block
+	cursor: pointer
+	text-transform: uppercase
+	color: #fff
+	&:hover
+		text-decoration: none
+		color: #fff
+
+
+@import "start"
+
+.what_we_do
+	width: 100%
+	background-color: #fff
+	
+.autobiography_text
+	text-align: center
+	margin-top: 60px
+	margin-bottom: 90px
+	.what_we_do__description
+		font-family: $handWritenFont
+		font-size: 24px
+		color: #333333
+	h2
+		font-family: $titleFont
+		color: #333333
+		font-size: 30px/30px
+	.block_devider
+		width: 70px
+		height: 3px
+		background-color: #f38181
+		margin: 30px auto
+	.text
+		font-family: $mainFont
+		color: #999999
+		font-size: 15px
+.team_gallery
+    width: 100%
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    margin-bottom: 120px
+    @media only screen and (max-width : 480px)
+    	display: block
+.image-block
+	width: 30%
+	height: 240px
+	@media only screen and (max-width : 480px)
+		width: 100%
+		height: 240px
+	&_1
+		background-color: #95e1d3
+		background-image: url("../img/img_block_1.png")
+		background-size: cover
+		background-repeat: no-repeat
+		// .img_center
+		// 	text-align: center
+		// 	position: absolute
+		// 	top: 43%
+		// 	left: 36%
+		// 	img 
+		// 		vertical-align: middle
+		// 	p
+		// 		font-family: $titleFont
+		// 		font-size: 18px
+		// 		color: #fff
+		// 		margin-top: 5px
+	&_2
+		background-color: #000
+		background-image: url("../img/img_block_2.png")
+		background-size: cover
+		background-repeat: no-repeat
+	&_3 
+		background-color: #000
+		background-image: url("../img/img_block_3.png")
+		background-size: cover
+		background-repeat: no-repeat
+.statistics
+	background-color: #95e1d3
+	position: relative
+.flex_statistics
+	width: 100%
+	display: flex
+	flex-direction: row
+	align-items: flex-start
+	.stat_block
+		width: 20%
+		height: 270px
+		text-align: center
+		border-right: 1px solid #b5eae0
+		border-left: 1px solid #b5eae0
+		h2
+			font-family: $titleFont
+			font-size: 72px
+			color: #fff
+			margin-top: 85px
+			margin-bottom: 0
+			@media only screen and (max-width : 768px)
+				font-size: 56px
+			@media only screen and (max-width : 480px)
+				font-size: 36px
+		p 
+			font-family: $titleFont
+			font-size: 14px
+			color: #fff
+			text-transform: uppercase
+			margin-top: 24px
+			@media only screen and (max-width : 768px)
+				font-size: 12px
+			@media only screen and (max-width : 480px)
+				font-size: 10px
+.we_work_with
+	width: 100%
+	background-color: #fff
+	&_title
+	text-align: center
+	margin-top: 60px
+	margin-bottom: 90px
+	.section_description
+		font-family: $handWritenFont
+		font-size: 24px
+		color: #333333
+	.section_title
+		font-family: $titleFont
+		color: #333333
+		font-size: 30px/30px
+		text-transform: uppercase
+	.block_devider
+		width: 70px
+		height: 3px
+		background-color: #f38181
+		margin: 30px auto
+.services	
+	width: 100%
+	margin-top: 50px
+	&_row_1
+		display: flex
+		flex-direction: row
+		align-items: flex-start
+		flex-wrap: wrap
+	&_row_2
+		display: flex
+		flex-direction: row
+		align-items: flex-start
+		flex-wrap: wrap
+	&_item
+		width: 379.6px;
+		height: 180px
+		img
+			float: left
+			margin: 50px 26px 100px 26px
+		h2 
+			text-transform: uppercase
+			font-family: $titleFont
+			font-size: 14px
+			text-align: start
+			margin-top: 47px
+		p
+		 font-family: $mainFont
+		 font-size: 15px
+		 color: #999999
+		 text-align: start
+		 margin-top: 15px
+		 line-height: 21px
+.unique_design
+	width: 100%
+	height: 820px
+	background-image: url("../img/unique_design_bg.png")
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	@media only screen and (max-width : 768px)
+		max-width: 100%
+		height: 819px
+	@media only screen and (max-width : 480px)
+		max-width: 100%
+		height: 668px
+	&_title
+		text-align: center
+		margin-top: 60px
+		margin-bottom: 30px
+	.section_description
+		font-family: $handWritenFont
+		font-size: 24px
+		color: #333333
+	.section_title
+		font-family: $titleFont
+		color: #333333
+		font-size: 30px/30px
+		text-transform: uppercase
+	.block_devider
+		width: 70px
+		height: 3px
+		background-color: #f38181
+		margin: 30px auto
+	.tablet_img
+		height: 570px
+		position: relative
+		text-align: center
+		img
+			text-align: center
+			@media only screen and (max-width : 480px)
+				max-width: 100%
+				height: auto
+	.phone_img
+		height: 476px
+		position: absolute
+		top: 35%;
+		left: 61%
+		img
+			@media only screen and (max-width : 480px)
+				max-width: 100%
+				height: auto
+.we_do
+	width: 100%
+	background-color: #fff
+	&_title
+		text-align: center
+		margin-top: 100px
+		margin-bottom: 90px
+	.section_description
+		font-family: $handWritenFont
+		font-size: 24px
+		color: #333333
+	.section_title
+		font-family: $titleFont
+		color: #333333
+		font-size: 30px/30px
+		text-transform: uppercase
+	.block_devider
+		width: 70px
+		height: 3px
+		background-color: #f38181
+		margin: 30px auto
+	.text
+		font-family: $mainFont
+		color: #999999
+		font-size: 15px
+		text-align: center
+	&_service
+		margin-top: 80px
+		margin-bottom: 80px
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		flex-wrap: wrap
+		.photo
+			img
+				@media only screen and (max-width : 480px)
+					max-width: 100%
+					height: auto
+				@media only screen and (max-width : 768px)
+					max-width: 100%
+					height: auto
+		.menu_list
+			width: 580px
+			.box
+				border: 1px solid
+				border-color: #e5e5e5
+				margin-bottom: 13px
+				cursor: pointer
+				h3
+					margin-left: 60px
+					font-family: $titleFont
+					font-size: 14px
+					margin-bottom: 22px
+					margin-top: 22px
+				ul
+					overflow: auto				
+					cursor: pointer
+					border-top: 1px solid
+					border-color: #e5e5e5
+					max-height: 162px
+					padding-left: 20px
+					padding-top: 15px
+					p 
+						font-size: 15px
+						font-family: $mainFont
+						line-height: 24px
+						color: #999999
+			.icon
+				background-image: url("../img/photography-icon.png");
+				background-repeat: no-repeat
+				width: 30px
+				height: 30px
+				margin: 14px
+				float: left
+.clearfix:before,.clearfix:after
+	content: " "
+	display: table
+.clearfix:after
+	clear: both
+
+.who
+	width: 100%
+	background-color: #fff
+	&_title
+		text-align: center
+		margin-top: 100px
+		margin-bottom: 90px
+	.section_description
+		font-family: $handWritenFont
+		font-size: 24px
+		color: #333333
+	.section_title
+		font-family: $titleFont
+		color: #333333
+		font-size: 30px/30px
+		text-transform: uppercase
+	.block_devider
+		width: 70px
+		height: 3px
+		background-color: #f38181
+		margin: 30px auto
+	.text
+		font-family: $mainFont
+		color: #999999
+		font-size: 15px
+		text-align: center
+	.team_photos
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+		flex-wrap: wrap
+		margin-top: 90px
+		.team_member
+			text-align: center
+			max-width: 350px
+			overflow: hidden
+			img
+				@media only screen and (max-width : 992px)
+					max-width: 100%
+					height: auto
+				@media only screen and (max-width : 768px)
+					max-width: 100%
+					height: auto
+				@media only screen and (max-width : 480px)
+					max-width: 100%
+					height: auto
+			h3
+				font-family: $titleFont
+				font-size: 14px
+				color: #484848
+				text-transform: uppercase
+			p
+				font-family: $handWritenFont
+				font-size: 15px
+				color: #999999
+.logo_section
+	width: 100%
+	height: 250px
+	line-height: 251px
+	background-color: #f8f8f8
+	margin-top: 110px
+	@media only screen and (max-width : 480px)
+		margin-top: 0
+	img
+		vertical-align: middle
+		@media only screen and (max-width : 992px)
+			max-width: 100%
+			height: auto
+.work_examples
+	width: 100%
+	background-color: #fff
+	&_title
+	text-align: center
+	margin-top: 60px
+	.section_description
+		font-family: $handWritenFont
+		font-size: 24px
+		color: #333333
+	.section_title
+		font-family: $titleFont
+		color: #333333
+		font-size: 30px/30px
+		text-transform: uppercase
+	.block_devider
+		width: 70px
+		height: 3px
+		background-color: #f38181
+		margin: 30px auto
+	.text
+		font-family: $mainFont
+		color: #999999
+		font-size: 15px
+		text-align: center
+	&_gallery
+		width: 100%
+		margin-top: 100px
+		display: flex
+		flex-direction: row
+		align-items: flex-start
+		justify-content: center
+		flex-wrap: wrap
+		&_column
+			height: 548px
+			width: 25%
+			img
+				@media only screen and (max-width : 480px)
+					max-width: 100%
+					height: auto
+.clients_say
+	width: 100%
+	background-color: #fff
+	background-image: url("../img/unique_design_bg.png")
+	background-repeat: no-repeat
+	background-size: cover
+	&_title
+		text-align: center
+		margin-top: 100px
+	.section_description
+		font-family: $handWritenFont
+		font-size: 24px
+		color: #333333
+	.section_title
+		font-family: $titleFont
+		color: #333333
+		font-size: 30px/30px
+		text-transform: uppercase
+	.block_devider
+		width: 70px
+		height: 3px
+		background-color: #f38181
+		margin: 30px auto
+.comments_row_1
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	.comment
+		width: 569px
+		img
+			float: left
+			margin: 0 30px 120px 40px
+			@media only screen and (max-width : 480px)
+				max-width: 100%
+				height: auto
+				margin-left: 0
+		h2 
+			text-transform: uppercase
+			font-family: $titleFont
+			font-size: 14px
+			text-align: start
+		p
+		 font-family: $mainFont
+		 font-size: 15px
+		 color: #999999
+		 text-align: start
+		 margin-top: 15px
+		 line-height: 21px
+.comments_row_2
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	.comment
+		width: 569px
+		img
+			float: left
+			margin: 0 30px 120px 40px
+			@media only screen and (max-width : 480px)
+				max-width: 100%
+				height: auto
+				margin-left: 0
+		h2 
+			text-transform: uppercase
+			font-family: $titleFont
+			font-size: 14px
+			text-align: start
+		p
+		 font-family: $mainFont
+		 font-size: 15px
+		 color: #999999
+		 text-align: start
+		 margin-top: 15px
+		 line-height: 21px

@@ -1,0 +1,30 @@
+.start
+    height: 100vh
+    display: flex
+    background-image: url('../img/start_bg.jpg')
+    background-size: cover
+    justify-content: center
+    align-items: center
+    color: #fff
+    &__title_block
+        width: 900px
+        text-align: center
+        @media only screen and (max-width : 480px)
+            width: 100%
+        &__devider
+            width: 70px
+            height: 3px
+            background-color: #fff
+            margin: 30px auto
+    &__description
+        font-family: $handWritenFont
+        font-size: 60px
+        @media only screen and (max-width : 480px)
+            font-size: 30px
+    &__title
+        font-family: $titleFont
+        font-size: 90px
+        text-transform: uppercase
+        font-weight: 700
+        @media only screen and (max-width : 480px)
+            font-size: 50px
