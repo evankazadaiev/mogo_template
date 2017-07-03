@@ -1,1 +1,382 @@
-theme: jekyll-theme-cayman
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>MOGO</title>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	 <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css"> 
+
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+<script
+  src="https://code.jquery.com/jquery-2.2.3.min.js"
+  integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
+  crossorigin="anonymous"></script>
+		 
+	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+
+		<!--slow scroll-->
+		<script type="text/javascript">
+		$(document).ready(function(){
+ 		  $('a[href*=#]').bind("click", function(e){
+     		 var anchor = $(this);
+     		 $('html, body').stop().animate({
+     		    scrollTop: $(anchor.attr('href')).offset().top
+     		 }, 1000);
+    		  e.preventDefault();
+  			 });
+ 		  return false;
+			});﻿
+		</script>
+		
+		<!--block description-->
+		<script>
+		$(document).ready(function(){
+		$("ul").hide();
+		$("div h3 span").click(function(){
+		$(this).parent().next().slideToggle();
+		});
+		}); 
+		</script>
+</head>
+
+<body>
+
+	<nav class="top_nav">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+			<button type="button" class="collapsed menu_btn" data-toggle="collapse" data-target="#menu_mobile" aria-expanded="false">
+				<div></div>
+				<div></div>
+				<div></div>
+			</button>
+			<a href="#">
+				<img src="img/logo.png" class="top_nav__logo" alt="">
+			</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="menu_mobile">
+			<ul class="navbar-right top_nav__menu">
+				<li class="top_nav__menu_element"><a class="top_nav__menu_link" href="#start">About</a></li>
+				<li class="top_nav__menu_element"><a class="top_nav__menu_link" href="#service">Service</a></li>
+				<li class="top_nav__menu_element"><a class="top_nav__menu_link" href="#work">Work</a></li>
+				<li class="top_nav__menu_element"><a class="top_nav__menu_link" href="#blog">Blog</a></li>
+			</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container -->
+	</nav>
+
+	<section class="start" name="start" id="start">
+		<div class="start__title_block">
+			<p class="start__description">Creative template</p>
+			<h1 class="start__title">Welcome to mogo</h1>
+			<div class="start__title_block__devider"></div>
+			<a href="#" class="my_btn">learn more</a>
+		</div>
+	</section>
+
+
+
+
+	<section class="what_we_do">
+		<div class="container">
+			<div class="autobiography_text">
+				<p class="what_we_do__description">What we do</p>
+				<h2>Story about us</h2>
+				<div class="block_devider"></div>
+				<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+			</div>
+			
+			<div class="team_gallery">
+				<div class="image-block image-block_1">
+					<!-- <div class="img_center">
+						<img src="img/img_block_1_users.png" alt="">
+
+						<p>Super Team</p>
+						</div> -->
+					</div>
+				<div class="image-block image-block_2"></div>
+				<div class="image-block image-block_3"></div>
+			</div>
+			
+		</div>
+	</section>
+
+		<section class="statistics">
+			<div class="container">
+				<div class="flex_statistics">
+					<div class="stat_block">
+					<h2>42</h2>
+					<p>Web Design Projects</p>
+					</div>
+					<div class="stat_block">
+					<h2>123</h2>
+					<p>Happy client</p>
+					</div>
+					<div class="stat_block">
+						<h2>15</h2>
+					<p>award winner</p>
+					</div>
+					<div class="stat_block">
+						<h2>99</h2>
+					<p>cup of coffee</p>
+					</div>
+					<div class="stat_block">
+						<h2>24</h2>
+					<p>Members</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+
+	<section class="we_work_with" id="service" name="service">
+		<div class="container">
+			<div class="we_work_with_title">
+				<p class="section_description">We work with</p>
+				<h2 class="section_title">Amazing services</h2>
+				<div class="block_devider"></div>
+			</div>
+			<div class="services">
+				<div class="services_row_1">
+					<div class="services_item services_item_photography">
+							<img src="img/services-photo.png" alt="">
+							<h2>photography</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+					</div>
+					<div class="services_item services_item_web_design">
+						<img src="img/services-design.png" alt="">
+						<h2>web design</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+					</div>
+					<div class="services_item services_item_creativity">
+						<img src="img/services-creativity.png" alt="">
+						<h2>creativity</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+					</div>
+				</div>
+				<div class="services_row_2">
+					<div class="services_item services_item_seo">
+						<img src="img/services-seo.png" alt="">
+							<h2>seo</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+					</div>
+					<div class="services_item services_item_html_css">
+						<img src="img/services-html.png" alt="">
+							<h2>css/html</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+					</div>
+					<div class="services_item services_item_digital">
+						<img src="img/services-digital.png" alt="">
+							<h2>digital</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+
+
+	<section class="unique_design">
+		<div class="container">
+			<div class="unique_design_title">
+				<p class="section_description">For all devices</p>
+				<h2 class="section_title">Unique design</h2>
+				<div class="block_devider"></div>
+			</div>
+		
+		<div class="tablet_img">
+			<img src="img/tablet_img.png" alt="">
+			<div class="phone_img">
+				<img src="img/phone_img.png" alt="">
+			</div>
+		</div>
+	</section>
+		
+
+	<section class="we_do">
+		<div class="container">
+			<div class="we_do_title">
+				<p class="section_description">Service</p>
+				<h2 class="section_title">WHAT WE DO</h2>
+				<div class="block_devider"></div>
+			</div>
+			<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			</p> 
+
+			<div class="we_do_service">
+				<div class="photo"><img src="img/we_do_picture.png" width="530px" height="380px" alt=""></div>
+				<div class="menu_list">
+					<div class="box">
+						<div class="icon"></div>
+   						<h3><span>PHOTOGRAPHY</span></h3>
+    						<ul>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    						</ul>
+					</div>
+					<div class="box">
+					<div class="icon"></div>
+    					<h3><span>CREATIVITY</span></h3>
+    					<ul>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    					</ul>
+					</div>
+					<div class="box">
+					<div class="icon"></div>
+   						<h3><span>WEB DESIGN</span></h3>
+    					<ul>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    					</ul>
+					</div>
+				</div>
+			</div>
+			
+	</section>
+
+	<section class="who">
+		<div class="container">
+				<div class="who_title">
+					<p class="section_description">Who we are</p>
+					<h2 class="section_title">MEET OUR TEAM</h2>
+					<div class="block_devider"></div>
+				</div>
+			<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			</p> 
+		
+		
+		<div class="team_photos">
+			<div class="team_member">
+				<img src="img/team_photo_1.png" alt="">
+				<h3>MATTHEW DIX</h3>
+				<p>Graphic Design</p>
+			</div>
+			<div class="team_member">
+				<img src="img/team_photo_2.png" alt="">
+				<h3>Christopher Campbell</h3>
+				<p>Branding/UX design</p>			
+			</div>
+			<div class="team_member">
+				<img src="img/team_photo_3.png" alt="">
+				<h3>Michael Fertig</h3>
+				<p>Developer</p>				
+			</div>
+		</div>
+		</div>
+	</section>
+	
+	<div class="logo_section">
+		<div class="container">
+			<img src="img/logos.png" alt="">
+		</div>
+	</div>
+
+	<section class="work_examples" id="work" name="work">
+		<div class="container">
+			<div class="work_examples_title">
+				<p class="section_description">What we do</p>
+				<h2 class="section_title">Some of our work</h2>
+				<div class="block_devider"></div>
+			</div>
+			<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			</p> 
+		</div>
+
+		<div class="work_examples_gallery col-xl-12">
+			<div class="gallery_column col-xl-3">
+			<div class="picture"><img src="img/image_1.png" width="337,25px" alt=""></div>
+			<div class="picture"><img src="img/image_2.png" width="337,25px" alt=""></div>	
+			</div>
+
+			<div class="gallery_column col-xl-3">
+				<div class="picture"><img src="img/image_3.png" width="337,25px" alt=""></div>
+				<div class="picture"><img src="img/image_4.png" width="337,25px" alt=""></div>
+			</div>	
+
+			<div class="gallery_column col-xl-3">
+				<div class="picture"><img src="img/image_5.png" width="337,25px" alt=""></div>
+			</div>
+			
+
+			<div class="gallery_column col-xl-3">
+				<div class="picture"><img src="img/image_6.png" width="337,25px" alt=""></div>
+				<div class="picture"><img src="img/image_7.png" width="337,25px" alt=""></div>
+			</div>
+		</div>
+	</section>
+
+<!-- 
+	<div class="section_quote">
+		<div class="container">
+			<div class="quote">
+				<div class="left_slide"><img src="img/left_slide.png" alt=""></div>
+				<div class="left_slide"><img src="img/quote.png" alt=""></div>
+				<div class="quote_text">
+					<blockquote>
+						“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+					</blockquote>
+					<cite>Joshua Earle</cite>
+				</div>
+				<div class="right_slide"><img src="img/right-turn.png" alt=""></div>
+
+			</div>
+		</div>
+	</div> -->
+
+	<section class="clients_say" id="blog" name="blog">
+		<div class="container">
+			<div class="clients_say_title">
+				<p class="section_description">Happy clients</p>
+				<h2 class="section_title">what people say</h2>
+				<div class="block_devider"></div>
+			</div>
+			
+			<div class="clients_say_comments">
+				<div class="comments_row_1">
+					<div class="comment">
+						<img src="img/people_say_1.png" alt="">
+							<h2>Matthew Dix</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+					</div>
+					<div class="comment">
+						<img src="img/people_say_2.png" alt="">
+							<h2>Nick Karvounis</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+				<div class="comments_row_2">
+					<div class="comment">
+						<img src="img/people_say_3.png" alt="">
+							<h2>Jaelynn Castillo</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+					</div>
+					<div class="comment">
+						<img src="img/people_say_4.png" alt="">
+							<h2>Mike Petrucci</h2>							
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+					</div>
+				</div>
+
+
+			</div>
+	</section>
+
+
+
+
+
+</body>
+</html>
